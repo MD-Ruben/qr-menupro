@@ -46,9 +46,8 @@ module.exports = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        black: "#274868",
-        dark: "#2e5076",
         primary: "#70c6db",
+        secondary: "#860B09",
         yellow: "#FBB040",
         "bg-color-dark": "#171C28",
         "body-color": {
@@ -82,6 +81,10 @@ module.exports = {
       },
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
+      },
+      fontFamily: {
+        'playfair-vietnam': ['var(--font-playfair-vietnam)'],
+        'playfair-indian': ['var(--font-playfair-indian)'],
       },
     },
   },
