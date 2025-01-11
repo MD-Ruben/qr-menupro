@@ -1,7 +1,7 @@
 import ScrollUp from "@/components/Common/ScrollUp";
-import Hero from "@/components/Hero";
+import Hero from "@/components/CompteClient/Hero";
 import { Metadata } from "next";
-import Menu from "@/components/Menu";
+import Menu from "@/components/CompteClient/Menu";
 import Pub from "@/components/Pub";
 
 export const metadata: Metadata = {

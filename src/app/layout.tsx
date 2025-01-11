@@ -1,13 +1,12 @@
 "use client";
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/CompteClient/Footer";
+import Header from "@/components/CompteClient/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter, Playfair_Display } from "next/font/google";
-import "node_modules/react-modal-video/css/modal-video.css";
 import { Providers } from "./providers";
 import "../styles/index.css";
-import Banner from "@/components/Banner";
+import Banner from "@/components/CompteClient/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 

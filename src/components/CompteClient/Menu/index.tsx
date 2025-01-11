@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const menuItems = [
   {
@@ -44,6 +47,12 @@ const menuItems = [
 ];
 
 const Menu = () => {
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.push('/compteclient/detailsdelacommande')
+  }
+
   return (
     <>
       <section className="relative bg-white py-20">
@@ -70,9 +79,9 @@ const Menu = () => {
                   <p className="text-red-600 font-bold text-xl mb-4">
                     {item.price}
                   </p>
-                  <button className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300">
+                  <button onClick={handleClick} className="w-full bg-red-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300">
                     Commander
-                  </button>
+                  </button> 
                 </div>
               </div>
             ))}
