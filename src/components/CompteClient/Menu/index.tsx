@@ -64,7 +64,7 @@ const Menu = () => {
                 key={index} 
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative h-48">
+                <div className="relative h-52">
                   <Image
                     src={item.image}
                     alt={item.name}

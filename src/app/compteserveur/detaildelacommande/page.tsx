@@ -1,12 +1,12 @@
+import Connexion from "@/components/CompteServeur/Connexion";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Hero from "@/components/CompteClient/Hero";
 import { Metadata } from "next";
-import Menu from "@/components/CompteClient/Menu";
 import Pub from "@/components/CompteClient/Pub";
+import DetailsCommande from "@/components/CompteServeur/DetailsCommande";
 
 export const metadata: Metadata = {
-  title: "QR-menuPro",
-  description: "La page de QR-menuPro",
+  title: "Détails de la commande | QR-menuPro",
+  description: "La page de détails de la commande de QR-menuPro",
   // other metadata
 };
 
@@ -14,9 +14,8 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
-      <Menu />
       <Pub />
+      <DetailsCommande />
     </>
   );
 }
